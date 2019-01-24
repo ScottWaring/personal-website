@@ -1,0 +1,55 @@
+.header {
+  width: 100%;
+  height: 25vh;
+  padding-left: 3em;
+  /* float: left; */
+  /* position: relative;; */
+}
+
+@keyframes smaller {
+  0% {font-size: 20em; width: 100vw; height: 100vh;};
+  25% {font-size: 15em; width: 75vw; height: 75vh;};
+  50% {font-size: 10em; width: 50vw; height: 50vh;};
+  75% {font-size: 5em; width: 40vw; height: 25vh;};
+  100% {font-size: 4em; width: 30vw; height: 15vh;};
+}
+
+@keyframes bigger {
+  0% {font-size: 4em; width: 30vw; height: 15vh;};
+  25% {font-size: 5em; width: 40vw; height: 25vh;};
+  50% {font-size: 10em; width: 50vw; height: 50vh;};
+  75% {font-size: 15em; width: 75vw; height: 75vh;};
+  100% {font-size: 20em; width: 100vw; height: 100vh;};
+}
+
+.big-title {
+  font-size: 20em;
+  border-style: dashed;
+  /* background-color: black; */
+  float: left;
+  /* position: absolute;
+  z-index:200; */
+  width:100vw;
+  height: 100vh;
+  /* top:0; */
+  animation-name: bigger;
+  animation-duration: 3s;
+}
+
+.small-title {
+  animation-name: smaller;
+  animation-duration: 3s;
+  font-size: 2em;
+  float: left;
+  width: 30vw;
+  height: 15vh;
+  /* position: absolute;
+  z-index:200; */
+  /* background-color: black; */
+}
+
+
+#logo {
+  font-family: 'Lobster', cursive;
+  color: blue;
+}
